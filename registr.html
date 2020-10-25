@@ -1,0 +1,55 @@
+<html lang="ru">
+   <head>
+   <meta charset="UTF-8">
+    <title>Домашка2.2</title>
+   </head>
+   <body>
+	 <form autocomplete="on">
+		<fieldset>
+			<legend align="center">Регистрация</legend>
+			<label> 
+				Имя*:
+			  </label>
+			    <input type="text" placeholder="Имя" required>	
+			  <label> 
+				фамилия*:
+			  </label>
+			    <input type="text" placeholder="фамилия" required>
+			  <label> 
+				Отчество*:
+			  </label>
+			    <input type="text" placeholder="Отчество" >
+				<label> 
+				Телефон*:
+			  </label>
+			    <input type="tel" 
+				autofocus 
+				pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+				placeholder="+7(___)___-__-__"> ><br/>
+			  <label> 
+				Почта*:
+			  </label>
+			    <input type="email" placeholder="email.com" required minlength="5" maxlenght="25"
+				   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
+
+			  <label>  
+				Пароль*:
+			  </label>
+			    <input type="text" autofocus placeholder="Введите пароль"required minlength="5" maxlenght="25">
+			  <label>  
+				Подтвердить пароль*:
+			  </label>
+			    <input type="text" autofocus placeholder="Введите пароль"required minlength="5" maxlenght="25"><br/>
+			  <label>  
+				Дополнительная информация:
+			  </label>
+			    <input type="text">
+			  <label>  
+				<input type="file"><br/>
+			  </label>
+				<input type="submit" value="отправить">
+			    <input type="reset" value="очистить">
+		</fieldset>		
+	 </form>
+   </body> 
+   </html
