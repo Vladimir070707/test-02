@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>			
+		 <meta charset= "utf-8">
+		 <meta name= "viewport"> 
+		 <title>Курсовая</title>
+		 <link rel="stylesheet" href=" kurs.css">
+	</head>
+	 <header>
+	  <div id="logo"onclick="slowScroll(`#top`)">
+	   <span>BigWave</span>
+	  </div>
+	  <div id="about"> 
+	   <a href="#" title="О Бали" onclick="slowScroll(`#main`)">О Бали</a>
+	   <a href="#" title="Услуги" onclick="slowScroll(`#overview`)">Услуги</a>
+	   <a href="#" title="Контакты" onclick="slowScroll(`#contacts`)">Контакты</a>
+	   <a href="#" title="Ответы на вопросы" onclick="slowScroll(`#faq`)">FAQ</a>
+	  </div>
+	 </header>
+	 <div id="top">
+	   <h1>Сёрфинг</h1>
+	   <h3>Стиль жизни!</h3>
+	 </div>
+	 <div id="main">
+	  <div class="intro"> 
+	   <h2>О Бали</h2>
+	   <span>Бали – знаменитый остров в Южной Азии. Южная часть острова омывается Индийским океаном, север  — одноименным морем Тихого океана. Религия острова – балийский индуизм.
+
+ 
+
+Культура Бали единственная в своем роде и не сможет оставить тебя равнодушным. Балийцы верят, что этот остров является центром Вселенной. У каждого храма, вулкана или другого примечательного места есть своя история, что делает это место еще более таинственным. 
+
+Выйдя из самолета, ты сразу почувствуешь запах благовоний, которые являются частью подношений разным богам. Каждый балийский домик, кафе или магазин обязательно делает эти подношения, наполняя остров прекрасным запахом.</span>
+	 </div>
+	  <div class="text"> 	   
+	   <span>Сезон серфинга на Бали – круглый год. Волны на западном побережье Бали обычно лучше с апреля по октябрь, а на восточном побережье – с ноября по март. Остров насчитывает как минимум 60 различных спотов  для серферов любого уровня. Серфинг на Бали достаточно безопасен, местные серферы дружелюбны, а наши инструкторы всегда рады помочь. Серфинг здесь уже стал частью культуры, и вы непременно проникнетесь ей, научитесь ловить волну и откроете для себя новый мир!</span>
+	 </div>
+	 <div class="text"> 	   
+	   <span>Достопримечательности и развлечения Бали ждут тебя. Выбирай, что хотелось бы посетить, и составляй план путешествия. Часть предлагаемых активностей ты можешь забронировать онлайн (когда будешь бронировать серф кемп) или на месте в кемпе или школе у наших администраторов.</span>
+	 </div>
+	 </div> 
+	 <div id="overview">
+	 <h2>Услуги</h2>
+	 
+	 <div class="img">
+	  <img src="https://images.freeimages.com/images/small-previews/b77/surf-in-the-sea-1-1470339.jpg">
+	  <span>Прокат гидрокостюмов</span>
+	 </div>
+	 <div class="img">
+	  <img src="https://images.freeimages.com/images/small-previews/ccc/surfs-up-1528832.jpg">
+	  <span>Прокат досок</span>
+	 </div>
+	 
+	 <div class="img">
+	  <img src="https://images.freeimages.com/images/small-previews/7ba/beach-fly-plane-bird-water-ocean-surf-skydive-sky-dive-pool-swim-sport-sports-action-flies-sand-wate-1545235.jpg">
+	  <span>Индивидуальные уроки</span>
+	 </div>
+	 </div>
+	 <div id="contacts">
+	  <center><h5>Обратная связь</h5></center>
+	  <form id="form_input">
+	  <label for="name">Имя <span>*</span></label><br>
+	  <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+	  <label for="email">Ваша почта <span>*</span></label><br>
+	  <input type="email" placeholder="Введите email" name="email" id="email"><br>
+	  <label for="message">Сообщение <span>*</span></label><br>
+	  <textarea placeholder="Введите ваше сооющение" name="message" id="message"></textarea><br>
+	  <div id="mess_send" class="btn">Отправить</div>
+	  </form>
+	 </div>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 <script>
+	  function slowScroll(id){
+	  $(`html,body`).animate({
+	  scrollTop: $(id).offset().top
+	  },500);
+	  }
+	  $(document).on("scroll", function (){
+	  if($(window).scrollTop() === 0)
+	   $("header").removeClass("fixed");
+	   else
+	   $("header").attr("class","fixed");
+	   });
+	 </script>
+	<body>  
+    </body> 	
+</html>
