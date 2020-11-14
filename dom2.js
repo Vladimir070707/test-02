@@ -28,10 +28,12 @@ switch(month){
 let n = prompt("Единица длинны");
 let lon = prompt("Длинна отрезка");
 switch(n){   
-	case "1":(lon / 10);
-	case "2":(lon * 10000);
-	case "3":(lon);
-	case "4":(lon / 1000);
-	case "5":(lon / 100);
+	case "1": alert(lon / 10); break;
+	case "2":alert(lon * 1000); break;
+	case "3":alert(lon); break;
+	case "4":alert(lon / 1000); break;
+	case "5":alert(lon / 100); break;
 }
+// Задание 2.3
+
 	
